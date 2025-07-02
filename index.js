@@ -1,16 +1,26 @@
 const mineflayer = require('mineflayer');
 
+let firstTime = true;
+
 function createBot() {
   const bot = mineflayer.createBot({
-    host: 'mcunity.aternos.me', // <- change this
+    host: 'mcunity.aternos.me', // Change this if needed
     port: 42417,
-    username: 'MyBot' // <- use any bot name
+    username: 'SAIM_Ka_bot' // Your bot name
   });
 
   bot.on('spawn', () => {
     console.log("✅ Bot spawned.");
 
-    // Jump every 1.5 seconds
+    // Send register or login command
+    if (firstTime) {
+      bot.chat('/register 123456');
+      firstTime = false;
+    } else {
+      bot.chat('/login 123456');
+    }
+
+    // Make bot jump every 1.5 seconds
     setInterval(() => {
       bot.setControlState("jump", true);
       setTimeout(() => {

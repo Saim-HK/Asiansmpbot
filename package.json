@@ -1,11 +1,13 @@
 {
-  "name": "minecraft-bot",
+  "name": "my-node-app",
   "version": "1.0.0",
+  "description": "A simple Node.js app",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "dependencies": {
-    "mineflayer": "^4.9.1"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
 }

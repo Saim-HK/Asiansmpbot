@@ -1,12 +1,11 @@
 {
   "name": "minecraft-bot",
   "version": "1.0.0",
-  "description": "A Minecraft bot using mineflayer",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "mineflayer": "^4.14.0"
+    "mineflayer": "^4.5.0"
   }
 }
